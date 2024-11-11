@@ -1,0 +1,36 @@
+Build a program that meets the following requirements:
+
+Do not use user defined functions for this assignment.  Doing so shall receive a zero for the assignment.
+
+Initializes a random number (see code fragment below) to a value between 1 and 10, inclusive.
+Repeatedly asks the player to guess what the number is until the number is guessed.
+If the guess is higher than the number, tell the player their guess is too high and that they should guess again.
+If the guess is lower than the number, tell the player their guess is too low and that they should guess again.
+If the guess is equal to the number, tell them:
+That their guess was correct.
+How many guesses they made.
+Here's the code to create a random number:
+
+  randomNumber = Math.floor(Math.random() * 10) +1;
+  document.getElementById("demo").innerHTML = randomNumber;
+  console.log(randomNumber);
+Required Output:
+
+GuessingGame{Prompt1.JPG
+says Guess a number between 1 and 10.
+GuessingGame{Prompt2.JPG
+says Guess was too low, guess again.
+GuessingGameAlert.JPG
+says You guessed it in 4 guesses!
+ 
+
+For Full Credit: 
+
+Code must run without errors.
+App flow must be exactly as specified in the requirements.
+User input shall be case insensitive.
+Proper choice of decision control structure.
+All if..else statements use a trailing else. 
+UX must be exactly as required, text, punctuation, spelling.  
+Exception is where the pictures above say, "This page says".  Some browsers may have different wording.
+Bonus: Use nested loops to allow the game to repeat until the user decides not to play again.
