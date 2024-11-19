@@ -17,6 +17,8 @@
                     userValue = prompt("Your guess was too low!\nGuess again.");
                 } else if (userValue > rngValue) {
                     userValue = prompt("Your guess was too high!\nGuess again.");
+                } else {
+                    userValue = prompt("Your guess... wasn't valid?\nGuess again (Use numbers only).");
                 }
             }
             alert("You guessed it in " + userGuesses + " guesses!\nThe number was " + rngValue + ".");
